@@ -9,7 +9,7 @@ public class BountyHunter extends Character {
     public void action() {
         System.out.println("Health:  [##########] 100%");
         System.out.println("Energy:  [#######   ] 20%");
-        System.out.println(name + "is shooting his blaster at his target!");
+        System.out.println(name + " is shooting his blaster at his target!");
     }
     public void hunt(){
         System.out.println(name + " is locked in on the target");
