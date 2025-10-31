@@ -7,6 +7,8 @@ public class Sith extends Character implements ForceUser {
     // Overrider action fra Character
     @Override
     public void action() {
+        System.out.println("Health:  [#####     ] 80%");
+        System.out.println("Energy:  [######### ] 70%");
         System.out.println(getName() + " is using the Force on his enemy!");
     }
 

@@ -7,6 +7,8 @@ public class Droid extends Character {
     //Overrider action fra Character
     @Override
     public void action() {
+        System.out.println("Health:  [########  ] 80%");
+        System.out.println("Energy:  [#######   ] 70%");
         System.out.println(name + "is shooting his blaster at the Jedi!");
     }
 }

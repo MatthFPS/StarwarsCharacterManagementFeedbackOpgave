@@ -7,12 +7,15 @@ public class Jedi extends Character implements ForceUser {
     // Overrider action fra Character
     @Override
     public void action() {
+        System.out.println("Health:  [#####     ] 50%");
+        System.out.println("Energy:  [######### ] 90%");
         System.out.println(getName() + " is using lightsaber to parry blaster bullets!");
     }
 
     // Meditate metoden
     public void meditate() {
         System.out.println(getName() + " is connecting with the Force through meditation");
+
     }
 
     // Implementerer useForce fra ForceUser

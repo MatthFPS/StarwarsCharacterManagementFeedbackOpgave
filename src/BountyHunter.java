@@ -7,6 +7,8 @@ public class BountyHunter extends Character {
     //Overrider action fra Character
     @Override
     public void action() {
+        System.out.println("Health:  [##########] 100%");
+        System.out.println("Energy:  [#######   ] 20%");
         System.out.println(name + "is shooting his blaster at his target!");
     }
     public void hunt(){
