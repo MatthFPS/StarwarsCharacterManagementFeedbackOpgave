@@ -33,8 +33,8 @@ public class Main {
         System.out.println("==============================");
         for (Character c : characters) {
             c.action();
+            System.out.println("==============================\n");
         }
-        System.out.println();
 
         // Jedi mediterer
         System.out.println("\n==============================");
