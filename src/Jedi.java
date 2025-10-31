@@ -1,16 +1,23 @@
-public class Jedi extends Character {
+public class Jedi extends Character implements ForceUser {
 
     public Jedi(String name, int age) {
-        //Bruger Super til at få navn og alder
-        super(name, age); //Character Konstruktøren, name og age.
+        super(name, age); // Henter navn og alder fra Character
     }
-    //Overrider Action fra Character
+
+    // Overrider action fra Character
     @Override
     public void action() {
-        System.out.println(name + "is using lightsaber to parry blaster bullets!");
+        System.out.println(getName() + " is using lightsaber to parry blaster bullets!");
     }
-    //Meditate metoden for sig selv
-    public void meditate(){
-        System.out.println(getName() + " is connecting with the force through meditation");
+
+    // Meditate metoden
+    public void meditate() {
+        System.out.println(getName() + " is connecting with the Force through meditation");
+    }
+
+    // Implementerer useForce fra ForceUser
+    @Override
+    public void useForce() {
+        System.out.println(getName() + " is using the Force for the good");
     }
 }

@@ -1,12 +1,18 @@
-public class Sith extends Character {
+public class Sith extends Character implements ForceUser {
 
     public Sith(String name, int age) {
-        //Bruger Super til at få navn og alder
-        super(name, age); //Character Konstruktøren, name og age.
+        super(name, age); // Henter navn og alder fra Character
     }
-    //Overrider Action fra Character
+
+    // Overrider action fra Character
     @Override
     public void action() {
-        System.out.println(name + "is using the Force on his enemy!");
+        System.out.println(getName() + " is using the Force on his enemy!");
+    }
+
+    // Implementerer useForce fra ForceUser
+    @Override
+    public void useForce() {
+        System.out.println(getName() + " is using the Force for the dark side");
     }
 }
